@@ -6,6 +6,8 @@
 
 #Server
 server.port: 8090
+spring.view.prefix: /main/webapp/
+spring.view.suffix: .jsp
 
 # DataSource
 spring:
@@ -38,5 +40,13 @@ webcam:
     predictedTextImagesPath: C:/tmp/shots/predicted/texts/
     textReaderTrainingDataPath: C:/Progra~2/Tesseract-OCR/tessdata
     #C:/DEV/JAVA/LIB/Tess4J/tessdata
-    faceDetectionClassifierName: haarcascade_frontalface_alt.xml
+    faceDetectionClassifierName: C:/DEV/C/opencv/build/install/etc/haarcascades/haarcascade_frontalface_alt.xml
     authenticationConfidenceFactor: 3
+    
+#DoorKeeper
+doorkeeper:
+    openButtonPinNumber: GPIO_01
+    toggleSecurityButtonPinNumber: GPIO_02
+    greenLightPinNumber: GPIO_03
+    redLightPinNumber: GPIO_04
+    lockPinNumber: GPIO_05

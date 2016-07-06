@@ -18,6 +18,15 @@
 	<build>
 		<finalName>${artifactId}-${version}</finalName>
 		<sourceDirectory>sources</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>static</directory>
+				<targetPath>static</targetPath>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -43,6 +52,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
@@ -62,9 +72,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j</artifactId>
 		</dependency>
-
-		<!-- <dependency> <groupId>com.pi4j</groupId> <artifactId>pi4j-core</artifactId> 
-			</dependency> -->
 	</dependencies>
 
 	<repositories>
