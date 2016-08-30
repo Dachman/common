@@ -41,12 +41,18 @@ webcam:
     textReaderTrainingDataPath: C:/Progra~2/Tesseract-OCR/tessdata
     #C:/DEV/JAVA/LIB/Tess4J/tessdata
     faceDetectionClassifierName: C:/DEV/C/opencv/build/install/etc/haarcascades/haarcascade_frontalface_alt.xml
+    bodyDetectionClassifierName: C:/DEV/C/opencv/build/install/etc/haarcascades/haarcascade_upperbody.xml
     authenticationConfidenceFactor: 3
+    loopsForFaceRecognitionAuthentication: 45
+    maximumFramesInVideoFiles: 1440
+    videoFilesPath: C:/tmp/shots/videos/
+    videoSequenceLength: 5
+    videoFPS: 20
     
 #DoorKeeper
 doorkeeper:
-    openButtonPinNumber: GPIO_01
-    toggleSecurityButtonPinNumber: GPIO_02
-    greenLightPinNumber: GPIO_03
-    redLightPinNumber: GPIO_04
-    lockPinNumber: GPIO_05
+    openButtonPinNumber: 21
+    toggleSecurityButtonPinNumber: 26
+    greenLightPinNumber: 22
+    redLightPinNumber: 23
+    lockPinNumber: 24
